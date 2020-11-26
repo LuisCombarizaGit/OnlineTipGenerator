@@ -6,6 +6,7 @@
   );
   --secondColor: #004953;
   --thirdColor: #fff;
+  --fourthColor: #45ccdd;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -56,11 +57,70 @@ p {
   font-weight: 900;
 }
 
+.billAmountInput {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+}
+
+.peopleAmtInput {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  display: block;
+  margin: 30px auto;
+  text-transform: uppercase;
+  background: var(--secondColor);
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 1.2rem;
+  color: var(--thirdColor);
+}
+
+button:hover {
+  background: var(--fourthColor);
+  border-bottom-color: black;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+.billAmt {
+  padding: 10px;
+}
+.billAmt:focus {
+  border: 3px solid var(--secondColor);
+  outline: none;
+}
+
+#serviceSelector {
+  padding: 10px;
+}
+#serviceSelector:focus {
+  border: 3px solid var(--secondColor);
+}
+.peopleAmt {
+  padding: 10px;
+}
+.peopleAmt:focus {
+  border: 3px solid var(--secondColor);
+  outline: none;
+}
+
 @media (max-width: 600px) {
   .container {
     height: 100%;
     width: 95%;
-    background: var (var(--thirdColor));
+    background: var(--thirdColor);
     border-radius: 20px;
   }
 }
