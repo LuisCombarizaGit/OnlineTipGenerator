@@ -1,0 +1,66 @@
+:root {
+  --mainColor: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(70, 232, 252, 1) 94%
+  );
+  --secondColor: #004953;
+  --thirdColor: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  background: var(--mainColor);
+  margin-top: 5%;
+}
+
+.container {
+  height: 100%;
+  width: 400px;
+  background: var(--thirdColor);
+  border-radius: 20px;
+}
+
+h1 {
+  background: var(--secondColor);
+  color: var(var(--thirdColor));
+  padding: 30px 0;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 900;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+#totalTip {
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+#totalTip sup {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: 100%;
+    width: 95%;
+    background: var (var(--thirdColor));
+    border-radius: 20px;
+  }
+}
